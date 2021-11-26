@@ -19,6 +19,7 @@ body{
     height: 100%;
     margin: 0;
     font-size: 18px;
+    font-family: 'PT Mono', monospace;
 }
 
 header{
@@ -52,8 +53,8 @@ header{
 
 #conteudo{
     background-color: rgba(33, 51, 41, 0.247);
-    min-height: 540px;
-    padding: 40px 40px 0px 40px;
+    min-height: 500px;
+    padding: 40px;
     margin-top: 15px;
     border: rgb(160, 149, 149) solid 1px;
     border-radius: 15px;
