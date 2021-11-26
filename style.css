@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{ 
+    /*background-color: rgb(27, 51, 45);*/
+    background-image: -moz-linear-gradient(#129656, #09523b, #000000);
+    background-image: -webkit-linear-gradient(#129656, #09523b, #000000);
+    background-image: -ms-linear-gradient(#129656, #09523b, #000000);
+    background-image: -o-linear-gradient(#129656, #09523b, #000000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:rgb(255, 223, 204);
+    height: 100%;
+    margin: 0;
+    font-size: 18px;
+}
+
+header{
+    font-size: 32px;
+    height: 60px;
+    padding: 60px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #111111;
+}
+
+#menu{
+    background-color: rgba(21, 46, 32, 0.411);
+    height: 40px;
+    padding: 20px 40px 0px 40px;
+    border: rgb(160, 149, 149) solid 1px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: #333 3px 4px 5px;
+}
+#menu a{
+    text-decoration: none;
+    color:rgb(255, 223, 204);
+    padding: 25px;
+}
+#menu a:hover{
+    color: rgb(255, 190, 152);
+}
+
+#conteudo{
+    background-color: rgba(33, 51, 41, 0.247);
+    min-height: 540px;
+    padding: 40px 40px 0px 40px;
+    margin-top: 15px;
+    border: rgb(160, 149, 149) solid 1px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgb(26, 25, 25) 3px 1px 5px;
+}
+
+footer{
+    clear: both;
+    font-size: 16px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
