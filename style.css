@@ -33,7 +33,6 @@ header{
 #menu{
     background-color: rgba(21, 46, 32, 0.411);
     height: 100%;
-    overflow-wrap: anywhere;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 15px 50px 15px 50px;
