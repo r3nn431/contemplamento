@@ -82,10 +82,10 @@ header{
 }
 /* --- */
 
-/* Atual página com conteudo*/
-#conteudo{
+/* Container para conteudo principal*/
+main{
     background-color: rgba(33, 51, 41, 0.247);
-    min-height: 500px;
+    min-height: 480px;
     padding: 40px;
     margin-top: 15px;
     border: rgb(160, 149, 149) solid 1px;
@@ -95,6 +95,34 @@ header{
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     box-shadow: rgb(26, 25, 25) 3px 1px 5px;
+}
+
+/* Conteudo: Read*/
+#read{
+    text-align: center;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+/* Conteudo: Play*/
+#play{
+    text-align: center;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+/* Conteudo: See*/
+#see{
+    text-align: center;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+/* Conteudo: Remember*/
+#remember{
+    text-align: center;
+    padding: 40px;
+    margin-top: 15px;
 }
 /* --- */
 
