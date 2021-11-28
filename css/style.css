@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: -moz-linear-gradient(#129656, #148360, #1a7256, #093326, #000000);
+    background-image: -webkit-linear-gradient(#129656, #148360, #1a7256, #093326, #000000);
+    background-image: -o-linear-gradient(#129656, #148360, #1a7256, #093326, #000000);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: auto;
+    color:rgb(255, 223, 204);
+    height: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'PT Mono', monospace;
+}
+
+header{
+    font-size: 40px;
+    font-family: 'Syne Mono', monospace;
+    height: 60px;
+    padding: 60px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #111111;
+}
+
+/* Menu de navegação */
+#menu{
+    background-color: rgba(21, 46, 32, 0.411);
+    text-align: center;
+    min-height: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    -o-overflow-scrolling: touch;
+    -ms-overflow-scrolling: touch;
+    white-space: nowrap;
+    padding: 10px 50px 10px 50px;
+    border: rgb(160, 149, 149) solid 1px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: #333 3px 4px 5px;
+}
+
+#menu::-webkit-scrollbar{
+    width: 15px;
+}
+#menu::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+#menu::-webkit-scrollbar-thumb {
+    background-color: rgba(52, 61, 63, 0.712);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#menu a{
+    text-decoration: none;
+    color:rgb(255, 223, 204);
+    padding: 25px;
+    display: inline-block;
+}
+#menu a:hover{
+    color: rgb(255, 190, 152);
+}
+/* --- */
+
+/* Container para conteudo principal*/
+main{
+    background-color: rgba(33, 51, 41, 0.247);
+    min-height: 480px;
+    padding: 40px;
+    margin-top: 15px;
+    border: rgb(160, 149, 149) solid 1px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgb(26, 25, 25) 3px 1px 5px;
+}
+
+/* Conteudo: Read*/
+#read{
+    text-align: center;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+/* Conteudo: Play*/
+#play{
+    text-align: center;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+/* Conteudo: See*/
+#see{
+    text-align: center;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+/* Conteudo: Remember*/
+#remember{
+    text-align: center;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+/* 404*/
+#notfound{
+    text-align: center;
+    padding: 40px;
+    margin-top: 15px;
+}
+/* --- */
+
+footer{
+    clear: both;
+    bottom: 0;
+    font-size: 16px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
