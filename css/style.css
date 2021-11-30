@@ -130,6 +130,9 @@ main{
     text-align: center;
     padding: 40px;
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* -------------- */
 
@@ -146,7 +149,6 @@ footer{
 .container{
     width: 90%;
     margin: auto;
-
 }
 
 #headergltch{
