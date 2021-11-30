@@ -7,11 +7,9 @@ $(function(){
 });
 
 function saveCookie(){
-    localStorage.setItem("scrl", document.getElementById("#menu").scrollTop);
-}
+    localStorage.setItem("scrl", document.getElementById("#menu").scrollLeft);
+};
 
 function restoreCookie(){
-    document.getElementById("#menu").innerHTML = localStorage.getItem("scrl");
-    var scrl = localStorage.getItem("scrl");
-    scrollTop = scrl;
-}
+    document.getElementById("#menu").scrollLeft = localStorage.getItem("scrl");
+};
