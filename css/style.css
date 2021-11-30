@@ -163,7 +163,7 @@ footer{
 /* ----------- Glitch effect */
 .glitch {
     position: relative;
-    color: white;
+    color: rgb(255, 237, 226);
     letter-spacing: 7px;
     animation: glitch-skew 0.5s infinite linear alternate-reverse;
 }
