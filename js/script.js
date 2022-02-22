@@ -26,13 +26,13 @@ function togglePlay(){
 function toggleSee(){
     if($("#seemain").is(":hidden")){
         $("#seemain").show();
-        $("#tomain, #playmain, #playmain, #remembermain").hide();
+        $("#tomain, #readmain, #playmain, #remembermain").hide();
     }
 }
 
 function toggleRemember(){
     if($("#remembermain").is(":hidden")){
         $("#remembermain").show();
-        $("#tomain, #playmain, #seemain, #seemain").hide();
+        $("#tomain, #readmain, #playmain, #seemain").hide();
     }
 }
