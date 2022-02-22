@@ -1,15 +1,38 @@
 //Contemplamento - JQuery
 
-$(function(){
-    $('#btn1').click(function(){
-        $('p').fadeOut('slow');
-    });
-});
+$("#readmain, #playmain, #seemain, #remembermain").hide();
 
-function saveCookie(){
-    localStorage.setItem("scrl", document.getElementById("#menu").scrollLeft);
-};
+function toggleTo(){
+    if($("#tomain").is(":hidden")){
+        $("#tomain").show();
+        $("#readmain, #playmain, #seemain, #remembermain").hide();
+    }
+}
 
-function restoreCookie(){
-    document.getElementById("#menu").scrollLeft = localStorage.getItem("scrl");
-};
+function toggleRead(){
+    if($("#readmain").is(":hidden")){
+        $("#readmain").show();
+        $("#tomain, #playmain, #seemain, #remembermain").hide();
+    }
+}
+
+function togglePlay(){
+    if($("#playmain").is(":hidden")){
+        $("#playmain").show();
+        $("#tomain, #readmain, #seemain, #remembermain").hide();
+    }
+}
+
+function toggleSee(){
+    if($("#seemain").is(":hidden")){
+        $("#seemain").show();
+        $("#tomain, #playmain, #playmain, #remembermain").hide();
+    }
+}
+
+function toggleRemember(){
+    if($("#remembermain").is(":hidden")){
+        $("#remembermain").show();
+        $("#tomain, #playmain, #seemain, #seemain").hide();
+    }
+}
