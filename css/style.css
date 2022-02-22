@@ -99,29 +99,36 @@ main{
     box-shadow: rgb(26, 25, 25) 3px 1px 5px;
 }
 
+/* ----------- Conteudo: To_index*/
+#tomain{
+    text-align: left;
+    padding: 40px;
+    margin-top: 15px;
+}
+
 /* ----------- Conteudo: Read*/
-#read{
+#readmain{
     text-align: center;
     padding: 40px;
     margin-top: 15px;
 }
 
 /* ----------- Conteudo: Play*/
-#play{
+#playmain{
     text-align: center;
     padding: 40px;
     margin-top: 15px;
 }
 
 /* ----------- Conteudo: See*/
-#see{
+#seemain{
     text-align: center;
     padding: 40px;
     margin-top: 15px;
 }
 
 /* ----------- Conteudo: Remember*/
-#remember{
+#remembermain{
     text-align: center;
     padding: 40px;
     margin-top: 15px;
