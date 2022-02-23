@@ -25,7 +25,8 @@ header{
     font-size: 40px;
     font-family: 'Syne Mono', monospace;
     height: 60px;
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     margin: auto;
     text-align: center;
     text-shadow: 1px 1px 1px #111111;
@@ -124,10 +125,10 @@ main{
 }
 #readmain a{
     text-decoration: none;
-    color:rgb(250, 210, 187);
+    color:rgb(226, 178, 238);
 }
 #readmain a:hover{
-    color: rgb(255, 190, 152);
+    color: rgb(221, 214, 220);
 }
 .letter{
     background-image: url(../img/paper.jpg);
@@ -150,8 +151,46 @@ main{
 /* ----------- Conteudo: See*/
 #seemain{
     text-align: center;
-    padding: 40px;
     margin-top: 15px;
+    margin-bottom: 15px;
+    float: left;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    -o-overflow-scrolling: touch;
+    -ms-overflow-scrolling: touch;
+    white-space: nowrap;
+    padding: 10px 40px 0px 0px;
+}
+#seemain::-webkit-scrollbar{
+    width: 15px;
+}
+#seemain::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+#seemain::-webkit-scrollbar-thumb {
+    background-color: rgba(52, 61, 63, 0.712);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#seemain::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+#seemain img{
+    width: 100%;
+    height: auto;
+    border: rgb(128, 109, 109) solid 1px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgb(26, 25, 25) 5px 4px 5px;
 }
 
 /* ----------- Conteudo: Remember*/
