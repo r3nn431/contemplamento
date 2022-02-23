@@ -102,21 +102,48 @@ main{
 /* ----------- Conteudo: To_index*/
 #tomain{
     text-align: left;
-    padding: 40px;
+    padding: 20px;
     margin-top: 15px;
+}
+#tomain a{
+    text-decoration: none;
+    color:rgb(250, 210, 187);
+}
+#tomain a:hover{
+    color: rgb(255, 190, 152);
 }
 
 /* ----------- Conteudo: Read*/
 #readmain{
-    text-align: center;
-    padding: 40px;
+    text-align: left;
+    padding: 20px;
     margin-top: 15px;
+}
+.dim{
+    font-size: 14px;
+}
+#readmain a{
+    text-decoration: none;
+    color:rgb(250, 210, 187);
+}
+#readmain a:hover{
+    color: rgb(255, 190, 152);
+}
+.letter{
+    background-image: url(../img/paper.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: local;
+    color:rgb(0, 0, 0);
+    padding: 60px;
+    font-size: 20px;
+    font-family: 'Homemade Apple', cursive;
 }
 
 /* ----------- Conteudo: Play*/
 #playmain{
-    text-align: center;
-    padding: 40px;
+    text-align: left;
+    padding: 20px;
     margin-top: 15px;
 }
 
