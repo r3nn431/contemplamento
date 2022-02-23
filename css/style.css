@@ -89,7 +89,7 @@ header{
 main{
     background-color: rgba(33, 51, 41, 0.247);
     min-height: 480px;
-    padding: 40px;
+    padding: 60px;
     margin-top: 15px;
     border: rgb(160, 149, 149) solid 1px;
     border-radius: 15px;
@@ -103,8 +103,6 @@ main{
 /* ----------- Conteudo: To_index*/
 #tomain{
     text-align: left;
-    padding: 20px;
-    margin-top: 15px;
 }
 #tomain a{
     text-decoration: none;
@@ -117,8 +115,6 @@ main{
 /* ----------- Conteudo: Read*/
 #readmain{
     text-align: left;
-    padding: 20px;
-    margin-top: 15px;
 }
 .dim{
     font-size: 14px;
@@ -144,8 +140,6 @@ main{
 /* ----------- Conteudo: Play*/
 #playmain{
     text-align: left;
-    padding: 20px;
-    margin-top: 15px;
 }
 
 /* ----------- Conteudo: See*/
