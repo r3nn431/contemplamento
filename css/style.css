@@ -121,10 +121,10 @@ main{
 }
 #readmain a{
     text-decoration: none;
-    color:rgb(226, 178, 238);
+    color:rgb(250, 146, 127);
 }
 #readmain a:hover{
-    color: rgb(221, 214, 220);
+    color: rgb(255, 245, 152);
 }
 .letter{
     background-image: url(../img/paper.jpg);
@@ -140,6 +140,13 @@ main{
 /* ----------- Conteudo: Play*/
 #playmain{
     text-align: left;
+}
+#playmain a{
+    text-decoration: none;
+    color: #ec6930;
+}
+#playmain a:hover{
+    color: #2aa198;
 }
 
 /* ----------- Conteudo: See*/
