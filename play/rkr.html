@@ -100,6 +100,24 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 	</div>
 	<tw-storydata name="rkr" startnode="7" creator="Twine" creator-version="2.3.16" ifid="4D137A26-6382-448C-AAE6-B1E4A6343992" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#title{
 	display: none;
+}
+
+body a{
+  	background-color: rgba(250, 210, 187, 0.247);
+  	border: rgb(160, 149, 149) solid 1px;
+    border-radius: 3px;
+	color: rgb(218, 75, 56);
+    padding: 5px;
+  	text-decoration: none;
+}
+body a:visited{
+  	text-decoration: none;
+	color: rgb(218, 75, 56);
+}
+body a:hover{
+  	background-color:rgba(250, 210, 187, 0.5);
+	color: rgb(233, 215, 182);
+  	text-decoration: none;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.passages.nobr = true;
 config.history.controls = false;
 
@@ -123,9 +141,9 @@ Na parede da guilda há um quadro cheio com avisos de recompensas para matar mon
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $hp &lt;= $hpmax/2&gt;&gt;
 	Você está machucado. A recepcionista percebe seus ferimentos e lhe recomenda descansar na taverna.&lt;br&gt;
-	[[&gt; Ir para a taverna|rest]]&lt;br&gt;
+	&lt;br&gt;[[&gt; Ir para a taverna|rest]]
 &lt;&lt;/if&gt;&gt;
-[[&gt; Ir para a masmorra|adventure]]&lt;br&gt;
+&lt;br&gt;[[&gt; Ir para a masmorra|adventure]]&lt;br&gt;
 [[&gt; Ir para a loja|shop]]</tw-passagedata><tw-passagedata pid="3" name="rest" tags="" position="439,104" size="100,100">&lt;&lt;set $location to &quot;Taverna&quot;&gt;&gt;
 &lt;&lt;set $hp to $hpmax&gt;&gt;
 Você foi descansar e cuidar de seus ferimentos na taverna. Seu corpo se sente revigorado.&lt;br&gt;&lt;br&gt;
@@ -142,14 +160,14 @@ Uma porta mais a frente se abre e monstros correm até você.&lt;br&gt;&lt;br&gt
 	Você atacou o monstro.&lt;br&gt;
 	&lt;&lt;set $monsterhp = $monsterhp - either(1, 2)&gt;&gt;
 	&lt;&lt;if $monsterhp &lt; 1&gt;&gt;
-		Um monstro foi derrotado.&lt;br&gt;
+		&lt;br&gt;Um monstro foi derrotado.
 		&lt;&lt;set $monsters -= 1&gt;&gt;
 		&lt;&lt;set $monsterhp to $monsterhpmax&gt;&gt;
-		Monstros restando: $monsters&lt;br&gt;
+		&lt;br&gt;Monstros restando: $monsters
 	&lt;&lt;/if&gt;&gt;
 	&lt;&lt;if $monsters &gt; 0&gt;&gt;
-		O monstro possui $monsterhp de vida.&lt;br&gt;
-		[[&gt; Lutar|fight]]&lt;br&gt;
+		&lt;br&gt;Monstro(vida: $monsterhp) x $name(vida: $hp)&lt;br&gt;
+		&lt;br&gt;[[&gt; Lutar|fight]]&lt;br&gt;
 		&lt;&lt;if $bomb &gt; 0&gt;&gt;
 			[[&gt; Usar bomba de fumaça|bomb]]&lt;br&gt;
 		&lt;&lt;/if&gt;&gt;
@@ -162,28 +180,29 @@ Uma porta mais a frente se abre e monstros correm até você.&lt;br&gt;&lt;br&gt
 	&lt;&lt;set $monsterhpmax += 1&gt;&gt;
 	&lt;&lt;set $lucky to either(0, 1)&gt;&gt;
 	&lt;&lt;if $lucky is 1&gt;&gt;
-		Você vê um bau ao canto da sala e ao abrir obteve um Elixir. Seu corpo se sente mais forte. &lt;br&gt;
+		&lt;br&gt;Você vê um bau ao canto da sala e ao abrir obteve um Elixir. Seu corpo se sente mais forte.
 		&lt;&lt;set $hpmax += 5&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
-	Todos os monstros foram derrotados e as portas foram abertas. Você sente monstros do outro lado da porta.&lt;br&gt;
+	&lt;br&gt;Todos os monstros foram derrotados e as portas foram abertas. Você sente monstros do outro lado da porta.&lt;br&gt;&lt;br&gt;
 	[[&gt; Avançar para outra sala|fight]]&lt;br&gt;
 	[[&gt; Sair da masmorra|main]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="StoryCaption" tags="" position="214,93" size="100,100">Nome: $name &lt;br&gt;
 Vida: &lt;&lt;if $hp &lt; 0&gt;&gt; 0 / $hpmax &lt;&lt;else&gt;&gt; $hp / $hpmax &lt;&lt;/if&gt;&gt; &lt;br&gt;
 Lugar: $location &lt;br&gt;
 Level: $level &lt;br&gt;
-Moedas: $coins</tw-passagedata><tw-passagedata pid="7" name="char" tags="" position="130,262" size="100,100">Qual o nome desse personagem?&lt;br&gt; &lt;&lt;textbox &quot;$name&quot; &quot;Nameless&quot; &quot;main&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="dead" tags="" position="285,559" size="100,100">Você morreu..</tw-passagedata><tw-passagedata pid="9" name="shop" tags="" position="622,156" size="100,100">Um senhor lhe comprimenta e mostra os produtos a venda.&lt;br&gt;&lt;br&gt;
+Moedas: $coins</tw-passagedata><tw-passagedata pid="7" name="char" tags="" position="130,262" size="100,100">Qual o nome desse personagem?&lt;br&gt; &lt;&lt;textbox &quot;$name&quot; &quot;Desafiante&quot; &quot;main&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="dead" tags="" position="285,559" size="100,100">Você morreu..</tw-passagedata><tw-passagedata pid="9" name="shop" tags="" position="622,156" size="100,100">&lt;&lt;set $location to &quot;Loja&quot;&gt;&gt;
+Um senhor lhe comprimenta e mostra os produtos a venda.&lt;br&gt;&lt;br&gt;
 
 &lt;&lt;if $coins &gt;= 10&gt;&gt;
-	&lt;&lt;link &quot;&gt; Bomba de fumaça (10 moedas) - use na luta para fugir.&quot;&gt;&gt;&lt;br&gt;
-		&lt;&lt;set $coins = $coins - 10&gt;&gt;
-		&lt;&lt;set $bomb++&gt;&gt;
-	&lt;&lt;/link&gt;&gt;
+	&lt;&lt;linkappend &quot;&gt; Bomba de fumaça (10 moedas) - use na luta para fugir.&quot;&gt;&gt; &lt;br&gt; (Comprado!) &lt;&lt;/linkappend&gt;&gt;
+	&lt;&lt;set $coins = $coins - 10&gt;&gt;
+	&lt;&lt;set $bomb++&gt;&gt;
 &lt;&lt;else&gt;&gt;
-	&gt; Bomba de fumaça (10 moedas) - use na luta para fugir.&lt;br&gt;
-	(Você não possui moedas suficientes.)&lt;br&gt;
+	&lt;&lt;linkappend &quot;&gt; Bomba de fumaça (10 moedas) - use na luta para fugir.&quot;&gt;&gt; &lt;br&gt; (Sem moedas suficiente.) &lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;br&gt;[[&gt; Voltar para guilda|main]]</tw-passagedata><tw-passagedata pid="10" name="bomb" tags="" position="597,458" size="100,100">Você usou a bomba de fumaça e confundiu os monstros. A porta foi aberta mas você não se sente mais forte.&lt;br&gt;&lt;br&gt;
+
+&lt;br&gt;&lt;br&gt;[[&gt; Voltar para guilda|main]]</tw-passagedata><tw-passagedata pid="10" name="bomb" tags="" position="597,458" size="100,100">&lt;&lt;set $location to &quot;Masmorra - salão&quot;&gt;&gt;
+Você usou a bomba de fumaça e confundiu os monstros. A porta foi aberta mas você não se sente mais forte.&lt;br&gt;&lt;br&gt;
 [[&gt; Ir para a Taverna|rest]]&lt;br&gt;
 [[&gt; Ir para a Guilda|main]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
