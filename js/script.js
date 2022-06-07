@@ -36,3 +36,21 @@ function toggleRemember(){
         $("#tomain, #readmain, #playmain").hide();
     }
 }
+
+function protected(e){
+    var password = "ilovemyself";
+    var ask = prompt('Digite a senha.', '');
+    var readid = e.target.id;
+    if (ask.toLowerCase() == password){
+        switch (readid){
+            case 'loveletter':
+                window.open("read/loveletter.html", target="_blank");
+                break;
+            default:
+                break;
+        }
+    }else{
+        alert("Errada.");
+    }
+    
+}
